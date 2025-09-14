@@ -1,0 +1,20 @@
+{
+  "name": "production",
+  "port": 8080,
+  "host": "0.0.0.0",
+  "database": {
+    "host": "${DB_HOST}",
+    "port": "${DB_PORT}",
+    "name": "${DB_NAME}",
+    "ssl": true
+  },
+  "logging": {
+    "level": "error",
+    "format": "json"
+  },
+  "features": {
+    "debugMode": false,
+    "hotReload": false,
+    "mockData": false
+  }
+}
